@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oks nato</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;  /* Dark background for Spotify-like theme */
+            color: #B3B3B3;  /* Light text color for contrast */
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #1DB954; /* Spotify green */
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #1ED760;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            padding: 100px 20px;
+            background: url('https://www.example.com/spotify-banner.jpg') no-repeat center center/cover;
+            color: white;
+        }
+        header h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        header p {
+            font-size: 1.4rem;
+            font-weight: lighter;
+        }
+
+        /* Main Content Section */
+        .tutorials {
+            padding: 50px 20px;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .tutorial-container {
+            background-color: #1C1C1C;
+            margin-bottom: 30px;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .tutorial-container:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+        }
+        .tutorial-container h2 {
+            color: #1DB954;  /* Spotify green */
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .tutorial-container p {
+            font-size: 1.1rem;
+            color: #B3B3B3;
+        }
+
+        /* Code Section */
+        .code-section {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .output-section {
+            background-color: #eee;
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1C1C1C;
+            color: #B3B3B3;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.8rem;
+            }
+            header p {
+                font-size: 1.1rem;
+            }
+            .tutorial-container h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#HOME">Home</a>
+        <a href="hah.html">Contact</a>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to KnowHTML</h1>
+        <p>Master HTML with interactive tutorials and examples</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="tutorials">
+        <!-- Tutorial: HTML Div -->
+        <div class="tutorial-container">
+            <h2>HTML Div</h2>
+            <p>Learn how to use the <code>&lt;div&gt;</code> tag to group and structure content in your HTML documents.</p>
+
+            <div class="code-section">
+                <p><strong>Code:</strong></p>
+                <pre>&lt;div style="background-color: #4CAF50; color: white; padding: 20px;"&gt;
+    &lt;h1&gt;This is a Heading&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph inside a div element.&lt;/p&gt;
+&lt;/div&gt;</pre>
+            </div>
+
+            <div class="output-section">
+                <p><strong>Output:</strong></p>
+                <div style="background-color: #4CAF50; color: white; padding: 20px;">
+                    <h1>This is a Heading</h1>
+                    <p>This is a paragraph inside a div element.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tutorial: HTML Colors -->
+        <div class="tutorial-container">
+            <h2>HTML Colors</h2>
+            <p>Learn how to apply colors using different formats in HTML (e.g., Hex, RGB, Color Names).</p>
+
+            <div class="code-section">
+                <p><strong>Code:</strong></p>
+                <pre>&lt;div style="background-color: #FF5733; color: white;"&gt;
+    &lt;p&gt;This is a colored div using Hex code.&lt;/p&gt;
+&lt;/div&gt;</pre>
+            </div>
+
+            <div class="output-section">
+                <p><strong>Output:</strong></p>
+                <div style="background-color: #FF5733; color: white; padding: 20px;">
+                    <p>This is a colored div using Hex code.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 KnowHTML | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
